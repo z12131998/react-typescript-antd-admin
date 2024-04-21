@@ -11,7 +11,7 @@ const service = axios.create({
 service.interceptors.request.use(
     //前置处理器
     (config) => {
-        console.log('发起请求:', config.headers.url)
+        // console.log('发起请求:', config.headers.url)
         return config;
     },
     //错误拦截
@@ -25,9 +25,7 @@ service.interceptors.response.use(
         console.log(response);
         const code = response.data.code;
         if (code === 200){
-            console.log("成功");
         }else{
-            console.log("失败");
         }
         return response;
     }

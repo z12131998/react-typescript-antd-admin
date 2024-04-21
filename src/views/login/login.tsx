@@ -1,20 +1,28 @@
 import { Button, Checkbox, Form, Input } from 'antd';
 import './login.less'
-import React from "react";
+import React, { useState } from "react";
 import { reqLogin } from '@/api/login';
+import { Navigate } from 'react-router-dom';
 
 function Login(props:any) {
-  console.log(props);
+
+  const [code,setCode] = useState(400);
+
   const onFinish = (values: any) => {
-    console.log('Success:', values);
-    reqLogin({username:"admin"});
+    reqLogin({username:"admin"}).then(data=>{
+      setCode(data.data.code);
+    })
+    //后续改成react来进行刷新跳转
+    // setCode(respond.data.code);
   };
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
   };
 
-
+ if (code === 200){
+  return <Navigate to="/index" />
+ }
   return (
     <>
       <div className="login-container">

@@ -2,6 +2,7 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Login from "@/views/login/login";
+import Index from "@/views/layout";
 export default function Router(){
     return (
         <>
@@ -9,6 +10,7 @@ export default function Router(){
                 <Routes>
                     <Route path="/login" element={<Login/>} />
                     <Route path="/" element={<Login/>} />
+                    <Route path="/index" element={<Index/> }/>
                 </Routes>
             </HashRouter>
         </>
