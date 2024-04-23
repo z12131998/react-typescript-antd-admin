@@ -9,8 +9,7 @@ export default function Router(){
             <HashRouter>
                 <Routes>
                     <Route path="/login" element={<Login/>} />
-                    <Route path="/" element={<Login/>} />
-                    <Route path="/index" element={<Index/> }/>
+                    <Route path="/*" element={<Index/>} />
                 </Routes>
             </HashRouter>
         </>
