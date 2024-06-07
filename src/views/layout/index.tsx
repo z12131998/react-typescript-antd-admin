@@ -4,7 +4,6 @@ import LayoutHeader from "./Header";
 import LayoutLeftSide from "./LeftSide";
 import LayoutContent from "./Content";
 function Index() {
-
     /**
      * 100 vh铺平整个浏览器
      * 第一层leftSide

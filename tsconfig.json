@@ -7,12 +7,13 @@
                 "src/*"
             ]
         },
-        "esModuleInterop":true /* 允许使用 CommonJS 模块系统 例如避免使用 * as react 原理则是编译时会把整个作为一个模块，而使用 react from react会报错，因为他没有 */ 
+        "esModuleInterop": true /* 允许使用 CommonJS 模块系统 例如避免使用 * as react 原理则是编译时会把整个作为一个模块，而使用 react from react会报错，因为他没有 */
     },
     "include": [
         "src/**/*.ts",
-        "src/**/*.tsx"
-, "src/router/router.js"    ], /* 包含的文件 */
+        "src/**/*.tsx",
+        "src/router/router.js"
+, "src/views/layout/Header/index.jsx", "src/router/router.tsx"    ], /* 包含的文件 */
     "exclude": [
         "node_modules"
     ]

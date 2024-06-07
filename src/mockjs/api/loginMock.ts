@@ -1,7 +1,7 @@
-const usernameMap = {
-    admin: "admin",
-    editor: "ediot"
-}
+// const usernameMap = {
+//     admin: "admin",
+//     editor: "ediot"
+// }
 
 
 const login = (config) => {

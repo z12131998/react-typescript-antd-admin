@@ -3,9 +3,12 @@ import './login.less'
 import React, { useState } from "react";
 import { reqLogin } from '@/api/login';
 import { Navigate } from 'react-router-dom';
+import { setUserInfo } from '@/sotre/slice/userSlice';
+import { useAppDispatch } from '@/sotre/hooks';
 
 function Login(props:any) {
-
+  console.log("进入登录页面");
+  const dispatch = useAppDispatch();
   const [code,setCode] = useState(400);
 
   const onFinish = (values: any) => {
@@ -21,6 +24,7 @@ function Login(props:any) {
   };
 
  if (code === 200){
+  dispatch(setUserInfo("admin"));
   return <Navigate to="/index" />
  }
   return (

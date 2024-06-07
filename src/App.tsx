@@ -5,13 +5,12 @@ import zhCN from "antd/es/locale/zh_CN"; //默认中文
 import Router from "@/router/router";
 import { Helmet,HelmetProvider  } from "react-helmet-async";
 import React from "react";
-import systemStore from './sotre/systemStore';
-
+import {store} from './sotre/systemStore';
 function App() {
   return (
             //<!-- //使用context特性进行向下传播-->
     <>
-    <Provider store={systemStore}>
+    <Provider store={store}>
         <ConfigProvider locale={zhCN}>
         <HelmetProvider>
         <Helmet><title>react-antd-admin</title></Helmet>

@@ -1,22 +1,22 @@
 # 所使用额外包
 1.react-app-rewired
 
-2.less
+2.less CSS的高级写法,LESS
 
-3.customize-cra
+3.customize-cra 不破坏脚手架,修改webpack配置
 
 4.react-router-dom 6.22 路由跳转
 
 5.react-helmet-async  head头信息管理,async分支用支持react16+ (弃用react-document-title与react-helmet)
 
-6.Autoprefixer  PX和REM的转换 LESS支持
+6.Autoprefixer  LESS的单位PX和REM单位的转换
 
 7.axios 是一个基于Promise的HTTP库，用于发起HTTP请求
 
 8.mockjs 假请求假数据，是一款模拟数据生成器，可以生成随机数据，拦截 Ajax 请求
 
 # 所使用的额外组件
-1.redux
+1.redux  全局状态管理  这里使用Redux Toolkit(官方推荐的编写 Redux 逻辑的方法)
 
 2.redux-thunk 可以在action里写方法,如果action返回的是一个函数,那么执行他,否则直接执行,这样我们可以在里面做异步等操作
 
