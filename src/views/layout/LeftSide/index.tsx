@@ -24,10 +24,11 @@ function LayoutLeftSide() {
 
     const switchPage = (arrya:any) =>{
         if (routerMap === null || Object.keys(routerMap).length === 0){
+            console.log("初始化菜单");
             initRouterMap(menuList);
         }
         console.log("跳转",routerMap[arrya.key].path);
-        return navigate(routerMap[arrya.key].path);
+        return navigate(routerMap[arrya.key].path); //可以使用Navigate代替
     }
 
 

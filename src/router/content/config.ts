@@ -13,7 +13,6 @@ const menuList = [
         key: 'blog',
         label: "作者页面",
         path: "/author",
-        // icon:"<GithubOutlined />",
     },
     {
         key: 'other',

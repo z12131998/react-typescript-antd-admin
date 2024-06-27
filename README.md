@@ -7,7 +7,7 @@
 
 4.react-router-dom 6.22 路由跳转
 
-5.react-helmet-async  head头信息管理,async分支用支持react16+ (弃用react-document-title与react-helmet)
+5.react-helmet-async  html的<head>头信息管理,async分支用支持react16+ (弃用react-document-title与react-helmet)
 
 6.Autoprefixer  LESS的单位PX和REM单位的转换
 
@@ -15,6 +15,7 @@
 
 8.mockjs 假请求假数据，是一款模拟数据生成器，可以生成随机数据，拦截 Ajax 请求
 
+9.echarts 做图使用
 # 所使用的额外组件
 1.redux  全局状态管理  这里使用Redux Toolkit(官方推荐的编写 Redux 逻辑的方法)
 
@@ -40,4 +41,5 @@ CSS Peek 4.4.0  className跳到对应的css里面,4.4.1作者怎么一堆BUG，�
 ├─ src
 │   ├─ views # views 所有页面
 │   │   ├─ laytou #使用ATND进行页面整体协调布局
+│   ├─ lib #第三方包整合依赖
 ```
